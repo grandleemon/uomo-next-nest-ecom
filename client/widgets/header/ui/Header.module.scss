@@ -1,0 +1,50 @@
+.header {
+  @apply bg-white;
+
+  .headerWrapper {
+    @apply flex justify-between items-center px-[60px] py-[20px];
+
+    .menuList {
+      @apply flex text-main gap-x-[30px] text-sm font-medium leading-[24px];
+
+      li {
+        @apply relative;
+
+        &::before {
+          @apply content-[""] absolute w-[40%] h-[2px] rounded-[4px] bg-main bottom-0 left-0 origin-left
+          scale-x-0 transition-transform duration-300 ease-in-out;
+        }
+
+        &:hover::before {
+          @apply scale-x-100;
+        }
+      }
+    }
+
+    .userActionsList {
+      @apply flex items-center gap-x-[30px];
+
+      img {
+        @apply fill-main stroke-main cursor-pointer;
+      }
+    }
+
+    .mobileBurgerMenu, .mobileShoppingBag {
+      @apply hidden;
+    }
+
+    @media only screen and (width <= 1024px) {
+      & {
+        @apply max-h-[60px] px-[15px] py-6;
+      }
+
+      .menuList, .userActionsList {
+        @apply hidden;
+      }
+
+      .mobileBurgerMenu, .mobileShoppingBag {
+        @apply block;
+      }
+    }
+  }
+}

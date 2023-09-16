@@ -1,0 +1,11 @@
+{
+  "name": "uomo-next-next-ecom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start:client": "cd client && npm run dev"
+  },
+  "author": "",
+  "license": "ISC"
+}
