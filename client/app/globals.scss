@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: black;
+html {
+  @apply overflow-hidden;
 }
