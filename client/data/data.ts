@@ -40,6 +40,8 @@ export const userActionsData = [
 	},
 	{
 		path: "icons/shopping-bag.svg",
-		alt: "shopping bag",
+		alt: "shopping-bag",
 	},
-]
+] as const;
+
+export type KeyToOpenModal = typeof userActionsData[number]["alt"]
