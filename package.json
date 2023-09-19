@@ -7,8 +7,12 @@
     "dev:client": "cd client && npm run dev",
     "build:client": "cd client && npm run build",
     "start:client": "cd client && npm run start",
-    "lint:client": "cd client && npm run lint"
+    "lint:client": "cd client && npm run lint",
+    "prepare": "husky install"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
 }
