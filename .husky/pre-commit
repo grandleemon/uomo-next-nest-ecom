@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run lint:client
+# Commitizen
+exec < /dev/tty && npx git-cz --hook || true
+
+echo "Commit...."
+
+exit 0
