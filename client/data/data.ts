@@ -44,4 +44,5 @@ export const userActionsData = [
 	},
 ] as const;
 
-export type KeyToOpenModal = typeof userActionsData[number]["alt"]
+export type KeyToOpenModal = typeof userActionsData[number]["alt"];
+
